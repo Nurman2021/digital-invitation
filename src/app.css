@@ -2,7 +2,24 @@
 @import '@fontsource/figtree';
 @plugin 'daisyui';
 
+/* Import Helvetica font if you have local files */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/fonts/Helvetica.woff2') format('woff2'),
+         url('/fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/fonts/Helvetica-Bold.woff2') format('woff2'),
+         url('/fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* *{
 	border: solid 1px red;
@@ -68,14 +85,6 @@ html {
 	font-weight: 800;
 }
 
-/* Theme controller fixed positioning */
-.theme-controller-fixed {
-	position: fixed;
-	bottom: 1.5rem;
-	right: 1.5rem;
-	z-index: 50;
-}
-
 /* Dropdown animation */
 .dropdown-content {
 	animation: dropdownFadeIn 0.2s ease-out;
@@ -118,11 +127,7 @@ html {
 	animation: fadeInUp 0.6s ease-out;
 }
 
-/* Dark mode improvements */
-[data-theme="dark"] .shadow-xl {
-	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-[data-theme="dark"] .shadow-lg {
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+/* Custom font utilities */
+.font-helvetica {
+	font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
 }

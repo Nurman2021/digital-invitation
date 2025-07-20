@@ -34,4 +34,4 @@
 <TestimonialsSection />
 <FAQSection />
 <CTASection />
-<Footer />
+<!-- <Footer /> -->

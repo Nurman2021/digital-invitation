@@ -1,44 +1,43 @@
 <script>
-	import { ChevronDown, ChevronUp } from 'lucide-svelte';
-
 	let openItems = {};
 
 	const faqs = [
 		{
 			id: 1,
-			question: 'Apa itu platform WeddingAI?',
+			question:
+				'Maaf Min, kalau nggak punya foto, apakah masih bisa buat undangan digital diwekita?',
 			answer:
-				'Platform perencanaan pernikahan komprehensif yang menggunakan teknologi AI untuk meningkatkan dan menyederhanakan pengalaman perencanaan pernikahan Anda di semua perangkat.'
+				'Tentu saja bisa Kak! 😊 Kalau nggak ada foto, kita bisa tetap bikin undangan digital yang keren untuk Kakak. Kita bisa pakai karakter animasi dan inisial nama Kakak dan pasangan biar undangannya tetap tampil istimewa dan personal! ✨'
 		},
 		{
 			id: 2,
-			question: 'Bagaimana AI bekerja dalam perencanaan pernikahan?',
+			question: 'Min, mau tanya nih, berapa lama masa aktif undangan digitalnya?',
 			answer:
-				'AI kami menganalisis preferensi, anggaran, dan gaya Anda untuk merekomendasikan vendor, venue, dan saran timeline yang sempurna. Ia belajar dari pilihan Anda untuk memberikan rekomendasi yang semakin personal.'
+				'Untuk masa aktif undangan digitalnya selama 1 tahun ya Kak, jadi Kakak punya banyak waktu untuk menyebarkannya ke semua tamu undangan. 😊'
 		},
 		{
 			id: 3,
-			question: 'Tugas apa yang dapat dilakukan platform WeddingAI?',
+			question: 'Min, untuk fitur yang tidak digunakan, apakah bisa dihapus dari undangannya?',
 			answer:
-				'WeddingAI dapat membantu dengan pencocokan vendor, pelacakan anggaran, manajemen tamu, pembuatan timeline, perencanaan menu, pengaturan tempat duduk, dan koordinasi real-time dengan tim pernikahan Anda.'
+				'Bisa banget Kak! 😊 Nanti tinggal dinote fitur apa yang ingin dihapus dari undangannya, dan kami akan sesuaikan sesuai dengan permintaan Kakak.'
 		},
 		{
 			id: 4,
-			question: 'Apakah data pernikahan saya aman dengan WeddingAI?',
+			question: 'Min, apakah bisa request desain untuk undangan digitalnya?',
 			answer:
-				'Tentu saja! Kami menggunakan langkah-langkah keamanan tingkat enterprise untuk melindungi informasi pribadi, detail tamu, dan rencana pernikahan Anda. Data Anda dienkripsi dan disimpan dengan aman.'
+				'Tentu bisa Kak! 😊 Kakak bisa request desain undangan digital sesuai keinginan. Silakan beri tahu detailnya, dan kami akan bantu membuatkan undangan digital yang sesuai dengan request Kakak.'
 		},
 		{
 			id: 5,
-			question: 'Bisakah WeddingAI belajar dari preferensi saya?',
+			question: 'Min, berapa lama proses pembuatan undangan digital?',
 			answer:
-				'Ya! AI kami terus belajar dari pilihan, feedback, dan interaksi Anda untuk memberikan rekomendasi dan saran yang semakin personal sesuai dengan gaya dan preferensi unik Anda.'
+				'Pengerjaan undangan digital biasanya memakan waktu 1 hari kerja, terhitung setelah pembayaran dan data fix kami terima. Kami akan segera proses dan pastikan undangan Kakak siap tepat waktu!'
 		},
 		{
 			id: 6,
-			question: 'Apakah saya memerlukan koneksi internet untuk WeddingAI?',
+			question: 'Min, apa perbedaan antara undangan digital spesial dan premium?',
 			answer:
-				'Meskipun koneksi internet diperlukan untuk koordinasi vendor real-time dan rekomendasi AI, banyak fitur perencanaan inti yang bekerja offline dan sinkron saat Anda kembali online.'
+				'Undangan digital premium memiliki desain yang lebih rumit dan detail, serta menggunakan bahan yang lebih sulit dicari dibandingkan dengan undangan digital spesial. Jadi, undangan premium memberikan tampilan dan kualitas yang lebih eksklusif dan unik.'
 		}
 	];
 
@@ -51,19 +50,17 @@
 <section class="bg-base-100 py-20">
 	<div class="container mx-auto px-4">
 		<div class="mb-16 text-center">
-			<h2 class="mb-6 text-4xl font-bold md:text-5xl">Pertanyaan Pernikahan?</h2>
-			<p class="text-base-content/70 text-lg">
-				Panduan Anda untuk Pertanyaan Perencanaan Pernikahan AI
-			</p>
+			<h2 class="font-helvetica mb-6 text-4xl font-bold md:text-5xl">FAQ</h2>
+			<p class="text-base-content/70 text-lg">Frequently Asked Questions​</p>
 		</div>
 
 		<div class="mx-auto max-w-3xl">
 			{#each faqs as faq}
-				<div class="collapse-plus bg-base-200 collapse mb-4">
+				<div class="collapse-arrow bg-base-200 collapse mb-4">
 					<input
-						type="checkbox"
-						name="faq-accordion-{faq.id}"
-						checked={openItems[faq.id] || false}
+						type="radio"
+						name="faq-accordion"
+						checked={faq.id === 1 ? 'checked' : false}
 						on:change={() => toggleItem(faq.id)}
 					/>
 					<div class="collapse-title text-xl font-medium">

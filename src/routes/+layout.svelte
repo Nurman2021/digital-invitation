@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import ThemeController from '$lib/components/ThemeController.svelte';
 
 	let { children } = $props();
 </script>
@@ -11,7 +10,4 @@
 	<main>
 		{@render children()}
 	</main>
-
-	<!-- Theme Controller -->
-	<ThemeController />
 </div>

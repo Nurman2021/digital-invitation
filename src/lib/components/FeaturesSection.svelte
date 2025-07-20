@@ -1,41 +1,41 @@
 <script>
-	import { Calendar, Shield, Zap, Heart, Users, Camera, Music, MapPin } from 'lucide-svelte';
+	import {
+		SwatchBook,
+		MessagesSquare,
+		FilePenLine,
+		Heart,
+		Users,
+		Camera,
+		Music,
+		MapPin,
+		CircleCheck,
+		UserCheck,
+		CreditCard,
+		Timer,
+		Images,
+		TvMinimalPlay,
+		QrCode,
+		Radio
+	} from 'lucide-svelte';
 
 	const features = [
 		{
-			icon: Calendar,
-			title: 'Perencanaan Pernikahan Efisien & Sinkronisasi',
+			icon: SwatchBook,
+			title: 'Beragam Pilihan Tema',
 			description:
-				'Penjadwalan cerdas dan koordinasi vendor untuk perencanaan pernikahan yang mulus.'
+				'Pilih tema favoritmu dari puluhan tema dan bisa kamu custom sendiri, mau ganti background dengan foto prewed? atau ubah warna tulisan? Bisa!.'
 		},
 		{
-			icon: Shield,
-			title: 'Keamanan dan Perlindungan Privasi',
+			icon: FilePenLine,
+			title: 'Custom Nama Tamu',
 			description:
-				'Detail pernikahan dan informasi tamu Anda dilindungi dengan keamanan tingkat enterprise.'
+				'Ngundang teman sebaya atau yang lebih tua gak perlu hawatir. Tetap sopan dengan undangan digital karena kamu bisa kirim undangan dengan nama tamu.'
 		},
 		{
-			icon: Zap,
-			title: 'Bantuan Real-time & Pembelajaran',
-			description: 'Rekomendasi bertenaga AI yang belajar dari preferensi dan gaya Anda.'
-		},
-		{
-			icon: Heart,
-			title: 'Asisten Pernikahan Cerdas',
+			icon: MessagesSquare,
+			title: 'Konfirmasi Kehadiran',
 			description:
-				'WeddingAssist memanfaatkan kekuatan AI canggih untuk memahami dan merencanakan pernikahan sempurna Anda dengan mulus.'
-		},
-		{
-			icon: Users,
-			title: 'Sistem Manajemen Tamu',
-			description:
-				'Temui WeddingConnect, sistem manajemen tamu bertenaga AI. Mengatur RSVP, preferensi makanan, dan pengaturan tempat duduk.'
-		},
-		{
-			icon: Camera,
-			title: 'Pengalaman Pernikahan Personal',
-			description:
-				'Temukan WeddingConnect: teknologi personal yang belajar dari Anda, menyesuaikan venue dan vendor untuk pengalaman unik.'
+				'Kini kamu bisa mengetahui berapa jumlah tamu yang hadir atau tidak, sehingga bisa mengurangi makanan sisa yang tidak termakan.'
 		}
 	];
 
@@ -65,14 +65,43 @@
 	<div class="container mx-auto px-4">
 		<!-- Why Choose Section -->
 		<div class="mb-16 text-center">
-			<h2 class="mb-6 text-4xl font-bold md:text-5xl">
-				Mengapa memilih <span class="text-primary">WeddingAI</span>?
+			<h2
+				class="font-helvetica mx-auto mb-6 max-w-3xl text-4xl leading-normal font-bold md:text-5xl"
+			>
+				Kenapa Harus Menggunakan
+				<span class="text-primary">Undangan Digital</span>?
 			</h2>
-			<p class="text-base-content/70 mx-auto max-w-3xl text-lg">
+			<!-- <p class="text-base-content/70 mx-auto max-w-3xl text-lg">
 				Asisten pernikahan AI Anda memberikan pemahaman bahasa alami, pengalaman personal, dan
 				analitik prediktif, mengintegrasikan koordinasi vendor, manajemen tamu, dan interaksi
 				kontekstual untuk perencanaan pernikahan yang lebih cerdas dan efisien.
-			</p>
+			</p> -->
+			<div class="mx-auto grid max-w-2xl grid-cols-1 justify-center gap-4 md:grid-cols-2">
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Hemat Biaya, Waktu, dan Tenaga</div>
+				</div>
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Lebih Praktis dan Efisien</div>
+				</div>
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Bisa diakses kapan saja dan dimana saja</div>
+				</div>
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Ramah Lingkungan</div>
+				</div>
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Tanpa Sampah</div>
+				</div>
+				<div class="flex items-start">
+					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
+					<div class="ml-2">Fitur melimpah</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Features Grid -->
@@ -84,137 +113,90 @@
 					>
 						<svelte:component this={feature.icon} class="text-primary h-8 w-8" />
 					</div>
-					<h3 class="mb-3 text-xl font-semibold">{feature.title}</h3>
+					<h3 class="font-helvetica mb-3 text-xl font-semibold">{feature.title}</h3>
 					<p class="text-base-content/70">{feature.description}</p>
 				</div>
 			{/each}
 		</div>
 
 		<!-- Feature with Image Section -->
-		<div class="mb-20 grid items-center gap-16 lg:grid-cols-2">
-			<div>
-				<div class="badge badge-primary mb-4">10+</div>
-				<h3 class="mb-6 text-3xl font-bold md:text-4xl">
-					Template <span class="text-primary">Pernikahan</span>
-				</h3>
-				<p class="text-base-content/70 mb-8 text-lg">
-					Aplikasi AI menetapkan tujuan, memproses data, melatih model, memprediksi hasil,
-					menggabungkan umpan balik pengguna untuk peningkatan, dan berinteraksi dengan sistem
-					eksternal untuk fungsionalitas perencanaan pernikahan yang lengkap
-				</p>
-
-				<!-- Process Steps -->
-				<div class="space-y-4">
-					<div class="flex items-center gap-4">
-						<div
-							class="bg-primary text-primary-content flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold"
-						>
-							1
-						</div>
-						<span>Pilih gaya dan preferensi pernikahan Anda</span>
-					</div>
-					<div class="flex items-center gap-4">
-						<div
-							class="bg-primary text-primary-content flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold"
-						>
-							2
-						</div>
-						<span>AI mencocokkan Anda dengan vendor sempurna</span>
-					</div>
-					<div class="flex items-center gap-4">
-						<div
-							class="bg-primary text-primary-content flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold"
-						>
-							3
-						</div>
-						<span>Rencanakan dan koordinasikan seluruh pernikahan Anda</span>
-					</div>
-					<div class="flex items-center gap-4">
-						<div
-							class="bg-primary text-primary-content flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold"
-						>
-							4
-						</div>
-						<span>Nikmati hari pernikahan sempurna Anda</span>
-					</div>
-				</div>
-
-				<button class="btn btn-primary mt-6">Baca Selengkapnya</button>
-			</div>
-
-			<div class="mockup-phone">
-				<div class="camera"></div>
-				<div class="display">
-					<div class="artboard artboard-demo phone-1 bg-gradient-to-br from-rose-100 to-pink-100">
-						<div class="space-y-4 p-6">
-							<div class="text-center">
-								<h4 class="text-lg font-bold">Timeline Pernikahan</h4>
-							</div>
-
-							<div class="space-y-3">
-								<div class="card bg-white/80 shadow-sm">
-									<div class="card-body p-3">
-										<div class="flex items-center justify-between">
-											<span class="text-sm font-medium">Upacara</span>
-											<span class="text-base-content/70 text-xs">14:00</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="card bg-white/80 shadow-sm">
-									<div class="card-body p-3">
-										<div class="flex items-center justify-between">
-											<span class="text-sm font-medium">Cocktail Hour</span>
-											<span class="text-base-content/70 text-xs">15:30</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="card bg-white/80 shadow-sm">
-									<div class="card-body p-3">
-										<div class="flex items-center justify-between">
-											<span class="text-sm font-medium">Resepsi</span>
-											<span class="text-base-content/70 text-xs">17:00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!-- How Does It Work Section -->
 		<div class="mb-16 text-center">
-			<h2 class="mb-6 text-4xl font-bold md:text-5xl">
-				Bagaimana kami <span class="text-primary">mengatur pernikahan Anda</span>?
+			<h2 class="font-helvetica mb-6 text-4xl font-bold md:text-5xl">
+				Fitur <span class="text-primary">Lengkap</span>
 			</h2>
 			<p class="text-base-content/70 mx-auto mb-12 max-w-3xl text-lg">
-				Daftar fitur yang terorganisir ini memberikan gambaran yang jelas tentang kemampuan platform
-				pernikahan AI, memudahkan pasangan untuk memahami fungsionalitas utama platform.
+				Undangan Digital Dengan Fitur yang Lengkap hanya disini
 			</p>
 		</div>
 
-		<!-- Additional Features Grid -->
-		<div class="mb-12 grid gap-8 md:grid-cols-3">
-			{#each additionalFeatures as feature}
-				<div class="text-center">
-					<div
-						class="bg-secondary/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full"
-					>
-						<svelte:component this={feature.icon} class="text-secondary h-8 w-8" />
-					</div>
-					<h3 class="mb-3 text-xl font-semibold">{feature.title}</h3>
-					<p class="text-base-content/70">{feature.description}</p>
+		<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+			<!-- Row 1 -->
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<UserCheck size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Custom Nama Tamu</div>
 				</div>
-			{/each}
-		</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<Music size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Custom Music Latar</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<MessagesSquare size={56} />
+					<div class="mt-2 text-center text-sm font-medium">RSVP &amp; Ucapan</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<CreditCard size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Amplop Digital</div>
+				</div>
+			</div>
 
-		<!-- Third Party Integrations -->
-		<div class="text-center">
-			<div class="badge badge-accent badge-lg mb-4">50+</div>
-			<h3 class="text-2xl font-bold">Integrasi Vendor</h3>
+			<!-- Row 2 -->
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<Timer size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Count Down Timer</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<Images size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Galeri Foto &amp; Video</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<MapPin size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Integrasi Google Maps</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<TvMinimalPlay size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Info Live Streaming</div>
+				</div>
+			</div>
+
+			<!-- Row 3 - Centered 2 cards -->
+			<div class="card bg-info text-info-content col-start-2 shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<QrCode size={56} />
+					<div class="mt-2 text-center text-sm font-medium">QR Code Checkin Acara</div>
+				</div>
+			</div>
+			<div class="card bg-info text-info-content shadow-lg">
+				<div class="card-body flex flex-col items-center justify-center p-4">
+					<Radio size={56} />
+					<div class="mt-2 text-center text-sm font-medium">Layar Sapa Real Time</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

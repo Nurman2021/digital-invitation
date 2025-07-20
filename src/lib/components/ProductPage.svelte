@@ -20,10 +20,12 @@
 <div class="bg-base-100 py-20">
 	<div class="container mx-auto px-4">
 		<div class="mb-16 text-center">
-			<div class="badge badge-secondary badge-lg mb-4">
-				Silahkan klik tombol dibawah ini untuk melihat contoh
-			</div>
-			<h2 class="text-base-content text-4xl font-bold md:text-5xl">Pilihan Tema</h2>
+			<h2 class="font-helvetica text-base-content text-4xl font-bold md:text-5xl">
+				Tema <span class="text-primary">Best Seller</span>
+			</h2>
+			<p class="text-base-content/70 mx-auto mb-12 max-w-3xl text-lg">
+				Pilih Tema Undangan Digitalmu Disini!
+			</p>
 		</div>
 
 		<div class="mx-auto max-w-7xl">

@@ -5,13 +5,12 @@
 <section class="bg-base-200 py-20">
 	<div class="container mx-auto px-4">
 		<!-- Header -->
-		<div class="mb-16 text-center">
+		<!-- <div class="mb-16 text-center">
 			<div class="badge badge-secondary badge-lg mb-4">Terbukti</div>
 			<h2 class="mb-6 text-4xl font-bold md:text-5xl">
 				<span class="text-primary">Perencanaan Pernikahan</span> Anda
 			</h2>
 
-			<!-- Testimonial Card -->
 			<div class="card bg-base-100 mx-auto w-full max-w-md shadow-xl">
 				<div class="card-body text-left">
 					<div class="mb-4 flex items-center gap-3">
@@ -41,7 +40,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Stats Grid -->
 		<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
