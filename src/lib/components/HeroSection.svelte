@@ -1,5 +1,14 @@
 <script>
-	import { Heart, Download, Users, Star, Shield, Zap, MessageCircle } from 'lucide-svelte';
+	import {
+		Heart,
+		Download,
+		Users,
+		Star,
+		Shield,
+		Zap,
+		MessageCircle,
+		ShoppingCart
+	} from 'lucide-svelte';
 </script>
 
 <!-- <section class="hero from-primary/5 via-base-100 to-secondary/5 min-h-screen bg-gradient-to-br"> -->
@@ -32,7 +41,7 @@
 			<div class="my-5 flex gap-3">
 				<button class="btn btn-primary hover:btn-secondary text-white">Buat Undangan</button>
 				<button class="btn btn-outline btn-primary hover:bg-primary hover:text-white"
-					>Lihat Demo</button
+					><ShoppingCart size={22} /> Lihat Demo</button
 				>
 			</div>
 		</div>
@@ -45,6 +54,6 @@
 		background-size: cover !important;
 		background-position: center !important;
 		background-repeat: no-repeat !important;
-		background-attachment: fixed !important;
+		/* background-attachment: fixed !important; */
 	}
 </style>

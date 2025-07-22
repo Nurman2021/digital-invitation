@@ -1,4 +1,6 @@
 <script>
+	import { ExternalLink } from 'lucide-svelte';
+
 	let { product } = $props();
 </script>
 
@@ -13,7 +15,7 @@
 		<p class="text-base-content/70 text-sm line-through">Rp. {product.description}</p>
 		<p class="text-primary mb-4 text-lg font-bold">Rp. {product.price}</p>
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary"> Lihat Contoh </button>
+			<button class="btn btn-primary font-normal"><ExternalLink size={18} /> Lihat Contoh </button>
 		</div>
 	</div>
 </div>

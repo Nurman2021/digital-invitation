@@ -4,7 +4,7 @@
 
 <section class="bg-primary text-primary-content py-20">
 	<div class="container mx-auto px-4 text-center">
-		<h2 class="font-helvetica mb-6 text-4xl font-bold md:text-5xl">
+		<h2 class="font-helvetica mb-6 text-4xl font-normal md:text-5xl">
 			Buat Undangan Digitalmu Sekarang!
 		</h2>
 		<div class="flex flex-col justify-center gap-4 sm:flex-row">
