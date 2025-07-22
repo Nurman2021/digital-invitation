@@ -15,7 +15,9 @@
 		<p class="text-base-content/70 text-sm line-through">Rp. {product.description}</p>
 		<p class="text-primary mb-4 text-lg font-bold">Rp. {product.price}</p>
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary font-normal"><ExternalLink size={18} /> Lihat Contoh </button>
+			<a class="btn btn-primary font-normal" href={product.url} target="_blank"
+				><ExternalLink size={18} /> Lihat Contoh
+			</a>
 		</div>
 	</div>
 </div>

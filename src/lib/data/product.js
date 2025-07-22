@@ -6,7 +6,8 @@ const products = [
         price: 1499.99,
         image: 'https://minasaline.com/wp-content/uploads/2024/07/Watercolor-03-2048x2048.jpg',
         category: 'pernikahan',
-        tags: ['gaming', 'laptop', 'premium']
+        tags: ['gaming', 'laptop', 'premium'],
+        url: '/tema-1'
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const products = [
         price: 799.99,
         image: 'https://minasaline.com/wp-content/uploads/2024/12/Natural-1-2048x2048.jpg',
         category: 'akikah',
-        tags: ['mobile', 'camera']
+        tags: ['mobile', 'camera'],
+        url: '/tema-2'
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const products = [
         price: 24.99,
         image: 'https://minasaline.com/wp-content/uploads/2024/12/Natural-02-2048x2048.jpg',
         category: 'pernikahan',
-        tags: ['summer', 'casual']
+        tags: ['summer', 'casual'],
+        url: '/tema-3'
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const products = [
         price: 89.99,
         image: 'https://minasaline.com/wp-content/uploads/2024/07/Watercolor-01-2048x2048.jpg',
         category: 'akikah',
-        tags: ['sports', 'running']
+        tags: ['sports', 'running'],
+        url: '/tema-4'
     }
 ];
 
