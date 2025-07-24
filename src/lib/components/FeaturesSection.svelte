@@ -71,11 +71,6 @@
 				Kenapa Harus Menggunakan
 				<span class="text-primary">Undangan Digital</span>?
 			</h2>
-			<!-- <p class="text-base-content/70 mx-auto max-w-3xl text-lg">
-				Asisten pernikahan AI Anda memberikan pemahaman bahasa alami, pengalaman personal, dan
-				analitik prediktif, mengintegrasikan koordinasi vendor, manajemen tamu, dan interaksi
-				kontekstual untuk perencanaan pernikahan yang lebih cerdas dan efisien.
-			</p> -->
 			<div class="mx-auto grid max-w-2xl grid-cols-1 justify-center gap-4 md:grid-cols-2">
 				<div class="flex items-start">
 					<CircleCheck class="text-primary" style="min-width: 24px" size={24} />
@@ -119,9 +114,6 @@
 			{/each}
 		</div>
 
-		<!-- Feature with Image Section -->
-
-		<!-- How Does It Work Section -->
 		<div class="mb-16 text-center">
 			<h2 class="font-helvetica mb-6 text-4xl font-bold md:text-5xl">
 				Fitur <span class="text-primary">Lengkap</span>
@@ -185,7 +177,7 @@
 			</div>
 
 			<!-- Row 3 - Centered 2 cards -->
-			<div class="card bg-info text-info-content col-start-2 shadow-lg">
+			<div class="card bg-info text-info-content shadow-lg md:col-start-2">
 				<div class="card-body flex flex-col items-center justify-center p-4">
 					<QrCode size={56} />
 					<div class="mt-2 text-center text-sm font-medium">QR Code Checkin Acara</div>
