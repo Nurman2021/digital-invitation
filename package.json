@@ -26,6 +26,8 @@
 	},
 	"dependencies": {
 		"@fontsource/figtree": "^5.2.8",
+		"@lottiefiles/lottie-interactivity": "^1.6.2",
+		"@lottiefiles/svelte-lottie-player": "^0.3.1",
 		"daisyui": "^5.0.46",
 		"lucide-svelte": "^0.525.0"
 	}
